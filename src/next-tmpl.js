@@ -2,7 +2,7 @@
 
   var global = global || this || self || window;
   var nx = global.nx || require('next-js-core2');
-  var formatRE = /(?:{)([\w.]+?)(?:})/gm;
+  var FORMAT_RE = /(?:{)([\w.]+?)(?:})/gm;
 
   var tmpl = nx.tmpl = function(inString,inArgs){
     var result = inString || '';
@@ -11,7 +11,7 @@
       } : function (str, match) {
         return nx.path(inArgs, match);
       };
-    return inString.replace(formatRE, replaceFn);
+    return inString.replace(FORMAT_RE, replaceFn);
   };
 
   if (typeof module !== 'undefined' && module.exports) {
