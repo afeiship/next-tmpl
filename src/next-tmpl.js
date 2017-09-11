@@ -6,7 +6,7 @@
 
   nx.tmpl = function(inString,inArgs){
     var result = inString || '';
-    var replaceFn = nx.isArray(inArgs) ? function (str, match) {
+    var replaceFn = Array.isArray(inArgs) ? function (str, match) {
         return inArgs[match];
       } : function (str, match) {
         return nx.path(inArgs, match);
