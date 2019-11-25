@@ -1,6 +1,7 @@
 {
   "name": "next-tmpl",
-  "description": "A simple tmpl based on next.",
+  "version": "0.0.1",
+  "description": "nextBoilerplatePackageDescription",
   "main": "dist/next-tmpl.js",
   "authors": [
     "afei"
@@ -19,6 +20,7 @@
     "bower_components",
     "test",
     "tests",
+    "build",
     "src",
     "gulp",
     "gulpfile.js"
