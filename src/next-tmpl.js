@@ -7,10 +7,10 @@
     var result = inString || '';
     var replaceFn = Array.isArray(inArgs)
       ? function(str, match) {
-          return inArgs[match];
+          return inArgs[match] || '';
         }
       : function(str, match) {
-          return nx.get(inArgs, match);
+          return nx.get(inArgs, match) || '';
         };
     return result.replace(FORMAT_RE, replaceFn);
   };

@@ -19,4 +19,14 @@ describe('tmpl -> object', function() {
     };
     expect(nx.tmpl(template, obj)).toBe('I am zhengfei, I can live 101 year');
   });
+
+  test('When no key exist will not join the key', function() {
+    const template = 'posts?keywods={keywrods}&page={page}&size={size}';
+    const obj = {
+      page: 1,
+      size: 10
+    };
+    const res = nx.tmpl(template, obj);
+    expect(res).toBe('posts?keywods=&page=1&size=10');
+  });
 });
