@@ -1,17 +1,19 @@
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('@feizheng/next-js-core2');
   var FORMAT_RE = /(?:{)([\w.]+?)(?:})/gm;
+  var EMPTY_STR = ''
 
-  nx.tmpl = function(inString, inArgs) {
-    var result = inString || '';
+  nx.tmpl = function (inString, inArgs) {
+    if (!inArgs) return inString;
+    var result = inString || EMPTY_STR;
     var replaceFn = Array.isArray(inArgs)
-      ? function(str, match) {
-          return inArgs[match] || '';
-        }
-      : function(str, match) {
-          return nx.get(inArgs, match) || '';
-        };
+      ? function (_, match) {
+        return inArgs[match] || EMPTY_STR;
+      }
+      : function (_, match) {
+        return nx.get(inArgs, match) || EMPTY_STR;
+      };
     return result.replace(FORMAT_RE, replaceFn);
   };
 
