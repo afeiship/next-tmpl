@@ -29,12 +29,17 @@ describe('tmpl -> object', function () {
   });
 
   test('When no key exist will not join the key', function () {
-    const template = 'posts?keywods={keywrods}&page={page}&size={size}';
+    const template = 'posts?keywods={keywrods}&page={page}&size={size}&deep_param={deep.a.b}';
     const obj = {
       page: 1,
-      size: 10
+      size: 10,
+      deep: {
+        a: {
+          b: 'dep_value'
+        }
+      }
     };
     const res = nx.tmpl(template, obj);
-    expect(res).toBe('posts?keywods=&page=1&size=10');
+    expect(res).toBe('posts?keywods=&page=1&size=10&deep_param=dep_value');
   });
 });
