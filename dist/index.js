@@ -3,7 +3,7 @@
  * description: A simple template engine based on next.
  * homepage: https://github.com/afeiship/next-tmpl
  * version: 1.0.0
- * date: 2020-11-20 10:40:19
+ * date: 2020-11-20 10:41:15
  * license: MIT
  */
 
