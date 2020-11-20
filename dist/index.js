@@ -1,15 +1,15 @@
 /*!
- * name: @feizheng/next-tmpl
- * description: A simple tmpl based on next.
+ * name: @jswork/next-tmpl
+ * description: A simple template engine based on next.
  * homepage: https://github.com/afeiship/next-tmpl
- * version: 1.0.3
- * date: 2020-05-24T01:57:31.986Z
+ * version: 1.0.0
+ * date: 2020-11-20 10:38:53
  * license: MIT
  */
 
 (function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
   var FORMAT_RE = /(?:{)([\w.]+?)(?:})/gm;
   var EMPTY_STR = ''
 
@@ -30,5 +30,3 @@
     module.exports = nx.tmpl;
   }
 })();
-
-//# sourceMappingURL=next-tmpl.js.map
