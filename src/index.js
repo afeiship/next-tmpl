@@ -7,13 +7,9 @@
   nx.tmpl = function (inString, inArgs) {
     if (!inArgs) return inString;
     var result = inString || EMPTY_STR;
-    var replaceFn = Array.isArray(inArgs)
-      ? function (_, match) {
-        return inArgs[match] || EMPTY_STR;
-      }
-      : function (_, match) {
-        return nx.get(inArgs, match) || EMPTY_STR;
-      };
+    var replaceFn = function (_, match) {
+      return nx.get(inArgs, match) || EMPTY_STR;
+    };
     return result.replace(FORMAT_RE, replaceFn);
   };
 
