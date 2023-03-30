@@ -15,23 +15,20 @@ npm install -S @jswork/next-tmpl
 ```js
 import '@jswork/next-tmpl';
 
-nx.tmpl('I am {0}, I can live {1} year', ['afei', 100]);
-nx.tmpl('I am {name}, I can live {age} year', { name:'afei', age:100});
-
-// I am afei, I can live 100 year
+//DOCS here!
 ```
 
 ## license
-Code released under [the MIT license](https://github.com/afeiship/next-tmpl/blob/master/LICENSE.txt).
+Code released under [the MIT license](https://github.com/afeiship/next-boilerplate-package/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@jswork/next-tmpl
-[version-url]: https://npmjs.org/package/@jswork/next-tmpl
+[version-image]: https://img.shields.io/npm/v/@boilerplate-scope/next-boilerplate-package
+[version-url]: https://npmjs.org/package/@boilerplate-scope/next-boilerplate-package
 
-[license-image]: https://img.shields.io/npm/l/@jswork/next-tmpl
-[license-url]: https://github.com/afeiship/next-tmpl/blob/master/LICENSE.txt
+[license-image]: https://img.shields.io/npm/l/@boilerplate-scope/next-boilerplate-package
+[license-url]: https://github.com/afeiship/next-boilerplate-package/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/next-tmpl
-[size-url]: https://github.com/afeiship/next-tmpl/blob/master/dist/next-tmpl.min.js
+[size-image]: https://img.shields.io/bundlephobia/minzip/@boilerplate-scope/next-boilerplate-package
+[size-url]: https://github.com/afeiship/next-boilerplate-package/blob/master/dist/next-boilerplate-package.min.js
 
-[download-image]: https://img.shields.io/npm/dm/@jswork/next-tmpl
-[download-url]: https://www.npmjs.com/package/@jswork/next-tmpl
+[download-image]: https://img.shields.io/npm/dm/@boilerplate-scope/next-boilerplate-package
+[download-url]: https://www.npmjs.com/package/@boilerplate-scope/next-boilerplate-package

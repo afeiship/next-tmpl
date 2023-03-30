@@ -1,3 +1,3 @@
 interface NxStatic {
-  tmpl: (template: string, data: any) => string;
+  // your codes goes here.
 }
