@@ -6,4 +6,4 @@ const task2 = new NxScripts({ name: 'qs', classify: false });
 
 [task1, task2].forEach(gulp.registry);
 
-gulp.task('default', gulp.series(['clean', 'nx:scripts.cjs']));
+gulp.task('default', gulp.series(['clean', 'nx:scripts']));
