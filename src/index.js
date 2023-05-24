@@ -12,7 +12,7 @@ nx.tmpl = function (inString, inArgs) {
   return result.replace(FORMAT_RE, replaceFn);
 };
 
-if (typeof module !== 'undefined' && module.exports) {
+if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
   module.exports = nx.tmpl;
 }
 
