@@ -12,8 +12,8 @@ nx.tmpl = function (inString, inArgs) {
   return result.replace(FORMAT_RE, replaceFn);
 };
 
-if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
-  module.exports = nx.tmpl;
-}
+// if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
+//   module.exports = nx.tmpl;
+// }
 
 export default nx.tmpl;
